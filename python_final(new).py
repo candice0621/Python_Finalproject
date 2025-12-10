@@ -153,7 +153,7 @@ class Ledger:
                     row.get("category", "其他"),
                     row.get("note", ""),
                 )
-                )
+                # Removed the extra ')' that was here
                 # 輸入工具、類別設定、新增記帳流程
 def safe_input(prompt=""):
     try:
@@ -207,8 +207,7 @@ def daily_expense_for_date(ledger: Ledger, date_str: str) -> float:
 def flow_add_transaction(ledger: Ledger):
     print("\n＝＝ 新增一筆記帳 ＝＝")
 
-    def flow_add_transaction(ledger: Ledger):
-    print("\n＝＝ 新增一筆記帳 ＝＝")
+    # Removed the duplicate and incorrectly indented function definition here.
 
     # 一定要YYYY-MM-DD才能往下
     while True:
