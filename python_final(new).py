@@ -207,6 +207,9 @@ def daily_expense_for_date(ledger: Ledger, date_str: str) -> float:
 def flow_add_transaction(ledger: Ledger):
     print("\n＝＝ 新增一筆記帳 ＝＝")
 
+    def flow_add_transaction(ledger: Ledger):
+    print("\n＝＝ 新增一筆記帳 ＝＝")
+
     # 一定要YYYY-MM-DD才能往下
     while True:
         today_str = datetime.date.today().isoformat()
